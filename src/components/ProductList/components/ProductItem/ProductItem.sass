@@ -1,0 +1,160 @@
+@import '~assets/styles/_vars.sass'
+
+.product-item
+  position: relative
+  background-color: $bg-color
+  height: 480px
+  box-sizing: border-box
+  border: 4px solid $blue
+  border-radius: 12px
+  background-position: left bottom
+  background-size: contain
+  background-repeat: no-repeat
+  clip-path: polygon(14% 0%, 100% 0, 100% 100%, 0 100%, 0% 10%)
+  cursor: pointer
+  overflow: hidden
+
+  &::after
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    pointer-events: none
+
+  &__wrapper
+    position: relative
+    margin: 15px 40px
+    width: 320px
+    max-width: 100%
+    font-family: 'TrebuchetMS', sans-serif
+
+    &::after
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 30px
+      height: 32px
+      border-top-left-radius: 12px
+      border-right: 4px solid rgba(0, 0, 0, 0)
+      border-bottom: 4px solid rgba(0, 0, 0, 0)
+      border-top: 4px solid $blue
+      border-left: 4px solid $blue
+
+    &_disable
+      &::after
+        border-top-color: $light-gray
+        border-left-color: $light-gray
+
+      .product-item
+        cursor: default
+        border-color: $light-gray
+
+        &::after
+          background-color: $bg-color
+          opacity: .6
+
+        &__top-text, &__h, &__h_small, &__desc
+          color: $light-gray
+
+        &__circle
+          background-color: $light-gray
+          z-index: 2
+
+    &_hover:not(.product-item__wrapper_disable)
+      &::after
+        border-top-color: $blue-hover
+        border-left-color: $blue-hover
+
+      .product-item
+        border-color: $blue-hover
+
+        &__circle
+          background-color: $blue-hover
+
+    &_pink
+      &::after
+        border-top-color: $pink
+        border-left-color: $pink
+
+      .product-item
+        border-color: $pink
+
+        &__circle
+          background-color: $pink
+
+      &.product-item__wrapper_hover
+        &::after
+          border-top-color: $pink-hover
+          border-left-color: $pink-hover
+
+        .product-item
+          border-color: $pink-hover
+
+          &__circle
+            background-color: $pink-hover
+
+  &__info
+    padding: 20px 38px 20px 50px
+
+  &__top-text
+    font-weight: 600
+    font-size: 16px
+    line-height: 1.25
+    color: $gray
+
+  &__h
+    font-family: 'Exo2'
+    font-weight: 700
+    color: #000
+    font-size: 48px
+    line-height: 58px
+
+  &__h_small
+    font-family: 'Exo2'
+    font-weight: 700
+    color: #000
+    font-size: 24px
+    line-height: 1.2
+
+  &__desc
+    margin-top: 14px
+    color: $gray
+    font-weight: 600
+    font-size: 14px
+    line-height: 1.15
+
+  &__circle
+    position: absolute
+    right: 16px
+    bottom: 16px
+    width: 80px
+    height: 80px
+    background-color: $blue
+    border-radius: 50%
+    color: #fff
+    font-weight: 600
+    font-size: 42px
+    line-height: 80px
+    text-align: center
+
+  &__bottom-text
+    margin-top: 10px
+    color: #fff
+    font-weight: 600
+    font-size: 13px
+    line-height: 1.15
+    text-align: center
+
+
+@media (max-width: $breakpoint-mobile)
+  .product-item__wrapper
+    margin: 15px 0
+    width: 290px
+    &::after
+      width: 26px
+      height: 30px
+
+

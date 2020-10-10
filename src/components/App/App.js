@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.sass';
+import ProductList from "../ProductList/ProductList";
 
 function App() {
   return (
     <div className="app">
-      <header className="header">
-        <h1>Ты сегодня покормил кота?</h1>
-      </header>
+      <ProductList/>
     </div>
   );
 }
