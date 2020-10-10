@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/food-cat/static/css/main.3402ce1b.chunk.css",
+    "main.js": "/food-cat/static/js/main.409c54c0.chunk.js",
+    "main.js.map": "/food-cat/static/js/main.409c54c0.chunk.js.map",
+    "runtime-main.js": "/food-cat/static/js/runtime-main.d4f2edbe.js",
+    "runtime-main.js.map": "/food-cat/static/js/runtime-main.d4f2edbe.js.map",
+    "static/js/2.dd294165.chunk.js": "/food-cat/static/js/2.dd294165.chunk.js",
+    "static/js/2.dd294165.chunk.js.map": "/food-cat/static/js/2.dd294165.chunk.js.map",
+    "index.html": "/food-cat/index.html",
+    "precache-manifest.00da7dbcee9427094f375fb91b5b528f.js": "/food-cat/precache-manifest.00da7dbcee9427094f375fb91b5b528f.js",
+    "service-worker.js": "/food-cat/service-worker.js",
+    "static/css/main.3402ce1b.chunk.css.map": "/food-cat/static/css/main.3402ce1b.chunk.css.map",
+    "static/js/2.dd294165.chunk.js.LICENSE.txt": "/food-cat/static/js/2.dd294165.chunk.js.LICENSE.txt",
+    "static/media/main.sass": "/food-cat/static/media/TrebuchetMS.a8b28478.eot",
+    "static/media/App.sass": "/food-cat/static/media/bg-main.d2e53f3e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d4f2edbe.js",
+    "static/js/2.dd294165.chunk.js",
+    "static/css/main.3402ce1b.chunk.css",
+    "static/js/main.409c54c0.chunk.js"
+  ]
+}
